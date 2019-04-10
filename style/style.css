@@ -99,6 +99,17 @@ section{
 .has-margin-right{
     margin-right: 5rem;
 }
+.percent{
+    
+    height: 3rem;
+    background: rgb(93, 236, 64);
+    border-radius: 20px;
+    color: #434444;
+    margin: 3rem;
+    font-weight: 900;
+    text-align: end;
+    border: 3px solid #e5f5ee;
+}
 
 header {
     width: 100%;
@@ -187,7 +198,7 @@ a{
 .brand{
     font-size: 1.5rem;
     color: #fff;
-    background-color: mediumpurple;
+    background-color: rgb(66, 221, 105);
     padding: 0 1rem;
     font-weight: 900;
 }
@@ -302,28 +313,28 @@ nav ul{
 
 .social-media li{
     display: inline-block;
-    margin: 3rem 7rem;
+    margin: 3rem 5rem;
     font-size: 6rem;
 }
 
 .fa-github{
     color: rgba(217, 241, 4, 0.795);
 }
-.fa-facebook-f{
+.fa-linkedin{
     color: rgba(196, 48, 233, 0.801);
 }
-.fa-instagram{
+.fa-id-badge{
     color: #e91621d5
 }
 
 .fa-github:hover{
-    color: #6bee2e;
+    color: #46cc08;
 }
 
-.fa-facebook-f:hover{
+.fa-linkedin:hover{
     color: #2a2ddbd5
 }
-.fa-instagram:hover{
+.fa-id-badge:hover{
     color: #c0f014cb
 }
 
@@ -483,64 +494,23 @@ nav ul{
 }
 .data-first{
     width: 75%;
-    height: 3rem;
-    background: rgb(93, 236, 64);
-    border-radius: 20px;
-    color: #e5f5ee;
-    margin: 3rem;
-    font-weight: 900;
-    text-align: end;
-    border: 3px solid #e5f5ee;
 }
 .data-second
 {
     width: 70%;
-    height: 3rem;
-    background: rgb(93, 236, 64);
-    border-radius: 20px;
-    color: #e5f5ee;
-    margin: 3rem;
-    font-weight: 900;
-    text-align: end;
-    border: 3px solid #e5f5ee;
 }
 .data-third
 {
     width: 60%;
-    height: 3rem;
-    background: rgb(93, 236, 64);
-    border-radius: 20px;
-    color: #e5f5ee;
-    margin: 3rem;
-    font-weight: 900;
-    text-align: end;
-    border: 3px solid #e5f5ee;
 }
-
 .data-forth
 {
     width: 50%;
-    height: 3rem;
-    background: rgb(93, 236, 64);
-    border-radius: 20px;
-    color: #e5f5ee;
-    margin: 3rem;
-    font-weight: 900;
-    text-align: end;
-    border: 3px solid #e5f5ee;
 }
 
 .data-fifth
 {
     width: 50%;
-    height: 3rem;
-    background: rgb(93, 236, 64);
-    border-radius: 20px;
-    color: #e5f5ee;
-    margin: 3rem;
-    font-weight: 900;
-    text-align: end;
-    border: 3px solid #e5f5ee;
 }
 
 /*Contact*/
@@ -649,7 +619,6 @@ input[type="submit"]:hover{
 }
 
 @media screen and (max-width:768px){
-
     .brand{
         margin: 0 auto;
         animation: initial;
@@ -664,6 +633,7 @@ input[type="submit"]:hover{
     header{
         perspective: 75rem;
         overflow: hidden;
+        
         
     }
 
@@ -695,7 +665,7 @@ input[type="submit"]:hover{
     .nav-link{
         margin: 2rem 0;
     }
-
+   
     header.open nav{
         transform: rotateY(0);
         
@@ -812,6 +782,9 @@ input[type="submit"]:hover{
         text-align: end;
         border: 3px solid #e5f5ee;
     }
+    .portfolio{
+        overflow-x: hidden;
+    }
 
 }
 
@@ -823,6 +796,7 @@ input[type="submit"]:hover{
 
     .landing-text h6{
         font-size: 3rem;
+        
     }
 
     .nav-link{
@@ -831,6 +805,10 @@ input[type="submit"]:hover{
 
     .about .container{
         flex-direction: column;
+        
+    }
+    .section-heading h1{
+        font-size: 4rem;    
     }
     .portfolio{
         overflow: hidden;
@@ -845,6 +823,7 @@ input[type="submit"]:hover{
     }
 
     .portfolio-img{
+        width: 80%;
         margin: 0;
         padding-bottom: 3rem;
         padding-left: 8rem;
@@ -853,7 +832,14 @@ input[type="submit"]:hover{
     }
 
     .portfolio-description{
+     background-color: #14f09475;
         margin: 0;
     }
-    
+
+    .portfolio-description h6{
+        font-size: 3.5rem;
+    }
+    .copyright{
+        overflow-x: hidden;
+    }
 }
